@@ -6,11 +6,11 @@ const app = express();
 // app.use(express.static(path.join(__dirname, '../client')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 app.get('/styles', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/index.css'))
+    res.sendFile(path.join(__dirname, '../public/index.css'))
 })
 
 
